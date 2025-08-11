@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Boars Pub Menu</title>
+    <!-- Tailwind CSS CDN for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: 'IM Fell English SC' for titles, 'Inter' for body text -->
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Apply 'Inter' as the default font for the body */
+        body {
+            font-family: 'Inter', sans-serif;
+            /* Ensure the body takes full viewport width and height for landscape display */
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden; /* Prevent scrolling */
+        }
+        /* Apply 'IM Fell English SC' for elements with the 'font-title' class */
+        .font-title {
+            font-family: 'IM Fell English SC', serif;
+        }
+        /* Hide scrollbar for the grid container to prevent accidental scrolling on TV */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+    </style>
+</head>
+<body class="bg-stone-900 text-amber-100 flex items-center justify-center px-6 py-4">
+    <!-- Main container for the menu, styled to look like a rustic sign -->
+    <div class="w-full h-full max-w-screen-2xl bg-stone-800 rounded-lg shadow-2xl p-8 border-4 border-amber-700 flex flex-col justify-center">
+        <!-- Pub Name - Large, prominent, and in the title font -->
+        <h1 class="font-title text-6xl text-center text-amber-300 mb-4 tracking-wide leading-tight">Three Boars Pub</h1>
+
+        <!-- Grid layout for menu sections (two columns on larger screens) -->
+        <!-- Added no-scrollbar class and adjusted gap-y and mt to save space -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6 flex-grow overflow-hidden no-scrollbar">
+            <!-- Draughts Section -->
+            <div class="flex flex-col">
+                <h2 class="font-title text-4xl text-amber-300 mb-4 border-b-2 border-amber-600 pb-2">Paradox Brewery Draughts</h2>
+                <ul class="space-y-3 flex-grow">
+                    <li class="flex items-baseline text-2xl">
+                        <span class="flex-grow pr-3">Beaver Bite IPA</span>
+                    </li>
+                    <li class="flex items-baseline text-2xl">
+                        <span class="flex-grow pr-3">Paradox Pilsner</span>
+                    </li>
+                    <!-- Add more draughts here as needed -->
+                </ul>
+                <h2 class="font-title text-4xl text-amber-300 mb-4 border-b-2 border-amber-600 pb-2">Cans</h2>
+
+                <!-- Seltzers Sub-section -->
+                <h3 class="font-title text-3xl text-amber-200 mb-2">Seltzers</h3>
+                <ul class="space-y-2">
+                    <li class="flex items-baseline text-2xl">
+                        <span class="flex-grow pr-3">Twisted Tea Original</span>
+                    </li>
+                    <li class="flex items-baseline text-2xl">
+                        <span class="flex-grow pr-3">High Noon Vodka Seltzers</span>
+                    </li>
+                    <li class="flex items-baseline text-2xl">
+                        <span class="flex-grow pr-3">White Claw Hard Seltzers</span>
+                    </li>
+                    <li class="flex items-baseline text-2xl">
+                        <span class="flex-grow pr-3">Simply Spiked Lemonade</span>
+                    </li>
+                    <!-- Add more seltzers here as needed -->
+                </ul>
+
+                <!-- Mixes Sub-section -->
+                <h3 class="font-title text-3xl text-amber-200 mb-2">Mixes</h3>
+                <ul class="space-y-2 mb-4">
+                     <li class="flex items-baseline text-2xl">
+                        <span class="flex-grow pr-3">Diet Ginger Ale</span>
+                    </li>
+                    <li class="flex items-baseline text-2xl">
+                        <span class="flex-grow pr-3">Tonic Water</span>
+                    </li>
+                    <li class="flex items-baseline text-2xl">
+                        <span class="flex-grow pr-3">Light Ginger Beer</span>
+                    </li>
+                    <!-- Add more mixes here as needed -->
+                </ul>
+            </div>
+
+            <!-- Cans Section with sub-categories -->
+            <div class="flex flex-col">
+                <h2 class="font-title text-4xl text-amber-300 mb-4 border-b-2 border-amber-600 pb-2">Beers</h2>
+                <!-- Canned Beers Sub-section -->
+                <ul class="space-y-2 mb-4">
+                    <li class="flex items-baseline text-2xl">
+                        <span class="flex-grow pr-3">Sip of Sunshine IPA</span>
+                    </li>
+                    <li class="flex items-baseline text-2xl">
+                        <span class="flex-grow pr-3">Little Sip IPA</span>
+                    </li>
+                    <li class="flex items-baseline text-2xl">
+                        <span class="flex-grow pr-3">Miller Lite</span>
+                    </li>
+                    <li class="flex items-baseline text-2xl">
+                        <span class="flex-grow pr-3">Yuengling Light</span>
+                    </li>
+                    <li class="flex items-baseline text-2xl">
+                        <span class="flex-grow pr-3">Yuengling</span>
+                    </li>
+                    <li class="flex items-baseline text-2xl">
+                        <span class="flex-grow pr-3">Sleeman Original</span>
+                    </li>
+                    <li class="flex items-baseline text-2xl">
+                        <span class="flex-grow pr-3">Guinness</span>
+                    </li>
+                    <li class="flex items-baseline text-2xl">
+                        <span class="flex-grow pr-3">Entertainer Brewsters</span>
+                    </li>
+                    <li class="flex items-baseline text-2xl">
+                        <span class="flex-grow pr-3">Nauset Haze IPA</span>
+                    </li>
+                     <li class="flex items-baseline text-2xl">
+                        <span class="flex-grow pr-3">White Shark Wheat</span>
+                    </li>
+                    <li class="flex items-baseline text-2xl">
+                        <span class="flex-grow pr-3">Beach Blonde</span>
+                    </li>
+                    <li class="flex items-baseline text-2xl">
+                        <span class="flex-grow pr-3">Muskoka Detour</span>
+                    </li>
+                    <li class="flex items-baseline text-2xl">
+                        <span class="flex-grow pr-3">Coors Banquet</span>
+                    </li>
+                    <!-- Add more canned beers here as needed -->
+                </ul>
+            </div>
+        </div>
+
+        <!-- Footnote/Disclaimer for the menu -->
+        <p class="text-center text-xl text-amber-500 mt-6">
+            *Please ask your server about daily specials.*
+        </p>
+    </div>
+</body>
+</html>
